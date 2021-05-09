@@ -1,0 +1,12 @@
+- name: Home
+  link: /
+- name: About
+  link: /about/
+- name: Videos
+  link: /videos/
+- name: Games
+  link: /games/
+- name: Puzzles
+  link: /puzzles/
+- name: Other
+  link: /videos/

@@ -1,0 +1,32 @@
+.current {
+    text-decoration: underline;
+}
+
+.navbar{
+    background-color: rgba(62, 62, 238, 0.952);
+    padding: 20px;
+    height: 27px;
+    position: sticky;
+    top: 0px;
+    margin: 0px auto;
+    width: 100%;
+}
+.navbar img {
+    width: 200px;
+    margin-top:-20px;
+}
+.navbar .links {
+    float: right;
+    font-size: 20px;
+    margin-right: 23px;
+}
+.navbar .links a {
+    margin: 7px;
+}
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
