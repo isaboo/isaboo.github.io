@@ -10,6 +10,10 @@
     top: 0px;
     margin: 0px auto;
 }
+.navbar img {
+    width: 200px;
+    margin-top:-20px;
+}
 @media only screen and (max-width: 768px) {
     .navbar {
        height: 25px;
@@ -18,13 +22,9 @@
        
     }
     .navbar img {
-       width: 20%;
+       width: 100px;
        margin-top: -15px;
     }
-}
-.navbar img {
-    width: 200px;
-    margin-top:-20px;
 }
 .navbar .links {
     float: right;
