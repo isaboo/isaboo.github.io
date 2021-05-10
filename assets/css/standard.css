@@ -6,4 +6,5 @@ body {
     background-color: rgb(41, 41, 41);
     color: white;
     overflow-x: hidden;
+    width: 100%;
 }
