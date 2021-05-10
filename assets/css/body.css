@@ -1,22 +1,99 @@
-.main {
+.box {
     background-color: rgb(63, 63, 63);
     border-radius: 7px;
     padding: 20px;
-    margin-top: 20px;
+    text-align: left;
+    display: block;
+    margin-top: 100px;
 }
-.main a {
+.box a {
     text-decoration: underline;
 }
-.main a:hover {
+.box a:hover {
     text-decoration: none;
 }
-.body {
+.box.recents {
+    height: 330px;
+    margin-top: 20px;
+    width: 52%;
+    padding-bottom: 0px;
+    max-width: 712px;
+    min-width: 500px;
+}
+.box .item {
+    background-color: rgb(41, 41, 41);
+    width: 220px;
+    height: 43.2%;
+    margin: 6px;
+    float: left;
+    border-radius: 5px;
+}
+.box .item img {
+    width: 100%;
+    height: 80px;
+    border-radius: 4px;
+}
+.box .recent img {
+    height: auto;
+}
+.box .item.recent {
+    height: 90%;
+    width: 340px;
+}
+.box .item .name {
+    font-size: 18px;
+}
+.box .item.recent .name {
+    font-size: 23px;
+}
+.box .item.recent .about {
+    font-size: 15px;
+}
+.box .item .about {
+    font-size: 11px;
+}
+.box .item a {
+    float: right;
+    font-size: 17px;
+}
+.box .item.recent a {
+    float: right;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.main {
     padding-left: 50px;
     padding-right: 50px;
+    text-align: center;
 }
 @media only screen and (max-width: 768px) {
-    .body {
+    .main {
         padding-left: 10px;
         padding-right: 10px;
     }
 }
+.news {
+    border: rgba(77, 77, 243, 0.582) 3px solid;
+    background-color: rgba(54, 54, 243, 0.055);
+    border-radius: 20px;
+    font-size: 18px;
+    height: 50px;
+    width: 405px;
+    margin-top: -80px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding-right: 5px;
+}
+.news .inner {
+    margin-top: 13px;
+    margin-right: 5px;
+}
+.news i {
+    color: rgb(77, 77, 243);
+    font-size: 40px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
