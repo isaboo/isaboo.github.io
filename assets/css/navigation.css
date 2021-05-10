@@ -12,13 +12,13 @@
 }
 @media only screen and (max-width: 768px) {
     .navbar {
-       height: 20px;
+       height: 25px;
        padding: 5px;
        padding-left: 0px;
        
     }
     .navbar img {
-       width: 70px;
+       width: 50px;
        margin-top: -15px;
     }
 }
