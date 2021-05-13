@@ -8,15 +8,11 @@
 <body>
     {% include navigation.html %}
     <div class="main">
-        <div class="news">
-            <i class="fas fa-info-circle"></i>
-            <div class="inner">
-                {{ site.data.news }}
-            </div>
-        </div>
-        <div class="box">
+        <div class="box welcome">
             {{ content }}
         </div>
+        <div class="box trailer" id="top"></div>
+        <br clear="all">
         <div class="box recents">
             <h2>Recents Items</h2>
             {% include recent.html %}
@@ -41,6 +37,7 @@
             <h2>About:</h2>
             Hello I'm Isaac.
         </div>
+        <div class="box trailer" id="under"></div>
     </div>
 </body>
 

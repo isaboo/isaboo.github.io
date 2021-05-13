@@ -4,7 +4,7 @@
     padding: 20px;
     text-align: left;
     display: block;
-    margin-top: 100px;
+    margin-top: 45px;
 }
 .box a {
     text-decoration: underline;
@@ -41,6 +41,26 @@
     margin-left: 20px;
     height: 335px;
 }
+.box.trailer {
+    float: right;
+    width: 35%;
+    height: 200px;
+}
+#top {
+    display: block;
+}
+#under {
+    display: none;
+    float: left;
+    height: 339px;
+    width: 44%;
+    margin-top: 20px;
+}
+.box.welcome {
+    float: left;
+    width: 58%;
+    height: 200px;
+}
 #right {
     display: block;
 }
@@ -75,19 +95,6 @@
 }
 @media only screen and (max-width: 1740px) {
     .box.about {
-        width: 20%;
-    }
-    .box.plug {
-        width: 475px;
-        margin-left: 57px;
-    }
-    .box.poll {
-        width: 475px;
-        margin-left: 57px;
-    }
-}
-@media only screen and (max-width: 1740px) {
-    .box.about {
         width: 18%;
     }
     .box.plug {
@@ -107,12 +114,14 @@
     }
     .box.plug {
         height: 340px;
-        width: 22%;
+        width: 25%;
+        margin-left: 5px;
     }
     .box.poll {
         height: 337px;
         float: right;
-        width: 22%;
+        width: 25%;
+        margin-left: 12px;
     }
     #right {
         display: none;
@@ -121,16 +130,49 @@
         display: inline-block;
     }
 }
-@media only screen and (max-width: 1484px) {
+@media only screen and (max-width: 1590px) {
     .box.plug {
-        width: 45%;
+        width: 23%;
+        margin-left: 18px;
     }
     .box.poll {
-        width: 45%;
-        float: none;
+        width: 21%;
+        margin-left: 5px;
+   }
+}
+@media only screen and (max-width: 1476px) {
+    .box.poll {
+        float: right;
+        margin-top: 20px;
+        width: 20.9%;
+    }
+    .box.plug {
+        float: right;
+        margin-right: 0px;
+    }
+    .box.about {
+        float: right;
+        width: 43.5%;
+    }
+    .box.recents {
+        width: 48%;
+    }
+    #bottom {
+        display: none;
+    }
+    #right {
+        display: block;
+    }
+    #top {
+        display: none;
+    }
+    #under {
+        display: block;
+    }
+    .box.welcome {
+        width: 99%;
     }
 }
-
 .box h2 {
     margin: 0px;
     font-size: 25px;
