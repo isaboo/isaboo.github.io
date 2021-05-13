@@ -10,6 +10,18 @@
     top: 0px;
     margin: 0px auto;
 }
+#expand {
+    position: fixed;
+    top: 36px;
+    background-color: rgba(62, 62, 238, 0.952);
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+}
+#expand a {
+    margin: 20px;
+    font-size: 40px;
+}
 .navbar img {
     width: 200px;
     margin-top:-20px;
@@ -36,6 +48,11 @@
         margin-right: 5px;
     }
     .navbar .links {
+        display: none;
+    }
+}
+@media only screen and (min-width: 727px) {
+    #expand {
         display: none;
     }
 }

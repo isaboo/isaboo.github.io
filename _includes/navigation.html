@@ -1,9 +1,15 @@
-<nav class="navbar">
+<nav class="navbar" id="navbar">
   <img src="{{ '/assets/images/logo.png' | relative_url }}">
   <div class="links">
     {% for item in site.data.navigation %}
-      <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+      <a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>{{ item.name }}</a>
     {% endfor %}
 
-  </div>    <div class="menuicon"><i class="fas fa-chevron-circle-down"></i></div>
+  </div>
+  <div class="menuicon" onclick="expand(this);" id="btn"><i id="chevron" class="fas fa-chevron-circle-down"></i></div>
+  <div class="hidden" id="expand">{% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>{{ item.name }}</a><br>
+  {% endfor %}</div>
 </nav>
+
+<script src="{{ '/assets/js/navigation.js' | relative_url }}"></script>
