@@ -1,17 +1,20 @@
 .box {
-    background-color: rgb(63, 63, 63);
+    background-color: #3f3f3f;
     border-radius: 7px;
     padding: 20px;
     text-align: left;
     display: block;
     margin-top: 45px;
 }
+
 .box a {
     text-decoration: underline;
 }
+
 .box a:hover {
     text-decoration: none;
 }
+
 .box.recents {
     float: left;
     height: 355px;
@@ -19,6 +22,7 @@
     width: 586px;
     padding-bottom: 0px;
 }
+
 .box.plug {
     float: left;
     width: 450px;
@@ -26,6 +30,7 @@
     margin-top: 20px;
     margin-left: 20px;
 }
+
 .box.poll {
     float: left;
     width: 450px;
@@ -33,22 +38,28 @@
     margin-top: 5px;
     margin-left: 20px;
 }
+
 /* clamp (250px,50%,599px) */
+
 .box.about {
     float: right;
     width: 33.1%;
     margin-top: 20px;
     margin-left: 20px;
     height: 335px;
+    overflow: hidden;
 }
+
 .box.trailer {
     float: right;
     width: 35%;
     height: 200px;
 }
+
 #top {
     display: block;
 }
+
 #under {
     display: none;
     float: left;
@@ -56,32 +67,39 @@
     width: 44%;
     margin-top: 20px;
 }
+
 .box.welcome {
     float: left;
     width: 58%;
     height: 200px;
 }
+
 #right {
     display: block;
 }
+
 #bottom {
     display: none;
 }
+
 @media only screen and (max-width: 1904px) {
     .box.about {
         width: 32%;
     }
 }
+
 @media only screen and (max-width: 1890px) {
     .box.about {
         width: 30%;
     }
 }
+
 @media only screen and (max-width: 1828px) {
     .box.about {
         width: 27%;
     }
 }
+
 @media only screen and (max-width: 1769px) {
     .box.about {
         width: 25%;
@@ -93,6 +111,7 @@
         margin-left: 40px;
     }
 }
+
 @media only screen and (max-width: 1740px) {
     .box.about {
         width: 18%;
@@ -106,6 +125,7 @@
         margin-left: 57px;
     }
 }
+
 @media only screen and (max-width: 1666px) {
     .box.about {
         width: 97%;
@@ -130,6 +150,7 @@
         display: inline-block;
     }
 }
+
 @media only screen and (max-width: 1590px) {
     .box.plug {
         width: 23%;
@@ -138,8 +159,9 @@
     .box.poll {
         width: 21%;
         margin-left: 5px;
-   }
+    }
 }
+
 @media only screen and (max-width: 1476px) {
     .box.poll {
         float: right;
@@ -173,10 +195,48 @@
         width: 99%;
     }
 }
+
+@media only screen and (max-width: 1330px) {
+    .box.recents {
+        width: 54%;
+    }
+    .box.about {
+        width: 37%;
+    }
+    #under {
+        width: 42%;
+    }
+}
+
+@media only screen and (max-width: 1205px) {
+    .box.recents {
+        width: 56%;
+    }
+    .box.about {
+        width: 35%;
+    }
+    #under {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    .box.recents {
+        width: 60%;
+    }
+    .box.about {
+        width: 30%;
+    }
+    #under {
+        width: 38%;
+    }
+}
+
 .box h2 {
     margin: 0px;
     font-size: 25px;
 }
+
 .box .item {
     background-color: rgb(41, 41, 41);
     width: 220px;
@@ -185,52 +245,166 @@
     float: left;
     border-radius: 5px;
 }
+
 .box .item img {
     width: 100%;
     height: 80px;
     object-fit: cover;
     border-radius: 4px;
 }
+
 .box .recent img {
     height: auto;
-    
 }
+
 .box .item.recent {
     height: 83.5%;
     width: 340px;
 }
+
 .box .item .name {
     font-size: 18px;
 }
+
 .box .item.recent .name {
     font-size: 23px;
 }
+
 .box .item.recent .about {
     font-size: 15px;
 }
+
 .box .item .about {
     font-size: 11px;
 }
+
 .box .item a {
     float: right;
     font-size: 17px;
 }
+
 .box .item.recent a {
     float: right;
     font-size: 20px;
     margin-right: 5px;
 }
+
+.plug {
+    margin: 10px;
+    font-size: 40px;
+}
+
+.yt-icon {
+    width: 50px;
+    float: left;
+}
+
+.gh-icon {
+    width: 70px;
+    float: left;
+    margin-left: -10px;
+    margin-right: -8px;
+}
+
+@media only screen and (max-width: 1080px) {
+    .box.recents {
+        width: 99%;
+        margin-bottom: 20px;
+    }
+    .box.about {
+        width: 99%;
+        float: none;
+        clear: both;
+        margin-top: 100px;
+        height: 200px;
+    }
+    #under {
+        width: 38%;
+    }
+    .box.recents {
+        height: 250px;
+    }
+    .box .item.recent {
+        width: 250px;
+        height: 200px;
+    }
+    .box .item.recent img {
+        width: 100%;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+    .box .item {
+        height: 150px;
+    }
+    .box.plug {
+        margin-top: 40px;
+        margin-right: -30px;
+        width: 26%;
+        height: 200px;
+    }
+    .box.poll {
+        height: 200px;
+    }
+    #under {
+        height: 200px;
+    }
+    .box.plug .plug {
+        font-size: 30px;
+    }
+    .gh-icon {
+        margin-left: -60px;
+    }
+}
+
 .main {
     padding-left: 50px;
     padding-right: 50px;
     text-align: center;
 }
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 952px) {
     .main {
         padding-left: 10px;
         padding-right: 10px;
     }
+    #under {
+        width: 99%;
+        float: none;
+        clear: both;
+    }
+    .box.plug {
+        width: 48%;
+    }
+    .box.poll {
+        width: 40%;
+        float: left;
+    }
 }
+
+@media only screen and (max-width: 780px) {
+    .box .item {
+        clear: both;
+    }
+    .box.recents {
+        height: 610px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .box.poll {
+        width: 99%;
+        float: none;
+        clear: both;
+    }
+    .box.plug {
+        width: 99%;
+        float: none;
+        clear: both;
+        margin-left: 3px;
+    }
+}
+
 .news {
     border: rgba(77, 77, 243, 0.582) 3px solid;
     background-color: rgba(54, 54, 243, 0.055);
@@ -244,10 +418,12 @@
     transform: translate(-50%);
     padding-right: 5px;
 }
+
 .news .inner {
     margin-top: 13px;
     margin-right: 5px;
 }
+
 .news i {
     color: rgb(77, 77, 243);
     font-size: 40px;
@@ -257,18 +433,3 @@
 }
 
 /* Icons */
-.plug {
-    margin: 10px;
-    font-size: 40px;
-}
-.yt-icon {
-    width: 50px;
-    float: left;
-}
-.gh-icon {
-    width: 70px;
-    float: left;
-    margin-left: -10px;
-    margin-right: -8px;
-}
-

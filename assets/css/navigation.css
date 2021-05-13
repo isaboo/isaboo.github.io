@@ -14,7 +14,11 @@
     width: 200px;
     margin-top:-20px;
 }
-@media only screen and (max-width: 768px) {
+.navbar .menuicon {
+    display: none;
+    font-size: 30px;
+}
+@media only screen and (max-width: 727px) {
     .navbar {
        padding: 5px;
        padding-left: 0px;
@@ -23,7 +27,16 @@
     .navbar img {
        width: 160px;
        margin: 5px;
-       margin-top: -12px;
+       margin-top: -8px;
+    }
+    .navbar .menuicon {
+        display: block;
+        float: right;
+        margin-top: -5px;
+        margin-right: 5px;
+    }
+    .navbar .links {
+        display: none;
     }
 }
 .navbar .links {

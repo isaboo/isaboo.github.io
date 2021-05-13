@@ -19,7 +19,7 @@
         </div>
         <div class="box about" id="right">
             <h2>About:</h2>
-            Hello I'm Isaac.
+            {{ site.data.aboutsnippet }}
         </div>
         <div class="box plug">
             <h2>Find @Isaboo elsewhere:</h2>
@@ -32,10 +32,14 @@
         </div><br>
         <div class="box poll">
             <h2>Daily poll</h2>
+            <h3>Do you like pizza?</h3>
+            <a href="https://linkto.run/p/WUDVYXEX">Click here to take part.</a>
         </div>
         <div class="box about" id="bottom">
             <h2>About:</h2>
-            Hello I'm Isaac.
+            <div class="inner">
+                {{ site.data.aboutsnippet }}
+            </div>
         </div>
         <div class="box trailer" id="under"></div>
     </div>
