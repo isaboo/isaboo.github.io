@@ -16,14 +16,13 @@
     padding-top: 0px;
     transition: .8s;
     top: 5px;
+    position: fixed;
 }
 .expandhidden a {
     margin: 0px;
     font-size: 0px;
 }
 .expand {
-    position: fixed;
-    top: 36px;
     background-color: rgba(62, 62, 238, 0.952);
     height: 100%;
     width: 100%;
