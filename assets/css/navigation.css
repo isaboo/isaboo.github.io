@@ -16,7 +16,6 @@
     padding-top: 0px;
     display: none;
     transition: .8s;
-    display: none;
     top: 36px;
 }
 .expand {
@@ -27,6 +26,7 @@
     width: 100%;
     padding-top: 50px;
     transition: .8s;
+    display: block;
 }
 .expand a {
     margin: 20px;
