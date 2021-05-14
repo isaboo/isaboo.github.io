@@ -16,7 +16,6 @@
     padding-top: 0px;
     transition: .8s;
     top: 5px;
-    position: fixed;
 }
 .expandhidden a {
     margin: 0px;
@@ -27,6 +26,8 @@
     height: 100%;
     width: 100%;
     padding-top: 50px;
+    position: fixed;
+    top: 36px;
     transition: .8s;
 }
 .expand a {
