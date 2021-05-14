@@ -359,14 +359,14 @@
 
 .main {
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 65px;
     text-align: center;
 }
 
 @media only screen and (max-width: 952px) {
     .main {
         padding-left: 10px;
-        padding-right: 10px;
+        padding-right: 20px;
     }
     #under {
         width: 99%;
