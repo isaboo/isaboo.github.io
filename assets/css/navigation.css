@@ -15,6 +15,7 @@
     width: 100%
     padding-top: 0px:
     display: none;
+    transition: .8s;
 }
 .expand {
     position: fixed;
@@ -23,6 +24,7 @@
     height: 100%;
     width: 100%;
     padding-top: 50px;
+    transition: .8s;
 }
 .expand a {
     margin: 20px;
