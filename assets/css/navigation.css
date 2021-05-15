@@ -81,11 +81,11 @@
 .navbar .links a {
     margin: 7px;
 }
-a {
+.navbar a {
     color: currentColor;
     text-decoration: none;
 }
-a:hover {
+.navbar a:hover {
     text-decoration: underline;
 }
 .navbar {

@@ -25,3 +25,10 @@
     right: 20px;
     text-align: right;
 }
+.footer a {
+    color: currentColor;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}

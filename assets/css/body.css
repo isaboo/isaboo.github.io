@@ -430,3 +430,10 @@
 p {
     text-align: left;
 }
+a {
+    color: currentColor;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
