@@ -15,6 +15,7 @@ I hope you enjoy using this website. If you have any suggestions, requests, or c
 This about page will get longer as time goes on.
 
 
+(Btw this is lorem impsum it's basically a filler text just to fill up space. It's Latin so you don't get destracted by reading it because you can't read it.)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra justo sit amet dui laoreet, eu finibus dolor feugiat. Cras sit amet ultrices est. Aliquam vehicula arcu ac ligula finibus, vitae porta tellus rutrum. Pellentesque viverra vulputate dolor, ac accumsan risus rutrum a. Donec euismod tincidunt risus, vel rhoncus arcu vulputate vitae. Nunc sed ipsum feugiat, fermentum quam tristique, dictum purus. Sed lectus sapien, eleifend vitae magna a, pellentesque dictum diam. Suspendisse ante lacus, laoreet sed massa a, rhoncus hendrerit tellus. Aenean fringilla mi eget lorem tempor gravida. Nullam ac facilisis ligula. Nullam dui lectus, fringilla et massa vel, aliquet venenatis sem. Proin interdum tortor ac massa varius imperdiet. Vivamus consectetur sollicitudin vehicula. Duis et aliquet justo.
 
