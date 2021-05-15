@@ -415,6 +415,9 @@
     }
 }
 /* Markdown  */
+.main {
+    text-align: left;
+}
 .content {
     background-color: #3f3f3f;
     border-radius: 7px;
@@ -423,4 +426,7 @@
     display: block;
     margin-top: 0px;
     clear: both;
+}
+p {
+    text-align: left;
 }
