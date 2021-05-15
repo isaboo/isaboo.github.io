@@ -8,5 +8,5 @@ function close(button) {
     document.getElementById("expand").className = "expandhidden";
     document.getElementById("btn").onclick = expand;
     document.getElementById("chevron").classList = "fas fa-chevron-circle-down";
-    document.getElementById("body").style.overflow = "scroll";
+    document.getElementById("body").style.overflow = "hidden";
 }
