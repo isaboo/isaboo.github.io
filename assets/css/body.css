@@ -248,6 +248,7 @@
     margin: 6px;
     float: left;
     border-radius: 5px;
+    position: relative;
 }
 
 .box .item img {
@@ -259,6 +260,9 @@
 
 .box .recent img {
     height: auto;
+    width: 100%;
+    height: 160px;
+    object-position: 100% 0;
 }
 
 .box .item.recent {
@@ -285,6 +289,9 @@
 .box .item a {
     float: right;
     font-size: 17px;
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
 }
 
 .box .item.recent a {
@@ -436,4 +443,7 @@ a {
 }
 a:hover {
     text-decoration: none;
+}
+body {
+    max-width: 100%;
 }

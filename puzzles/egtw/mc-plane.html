@@ -1,0 +1,19 @@
+---
+layout: default
+title: Emoji Guess the word
+permalink: /puzzles/egtw/mc-plane
+longtitle: Can u crack this emoji guess the word?
+---
+<h3>Band:</h3>
+        <img src="mc-plane.png" width="200px"/><br><br><br>
+        <a id="show" href="javascript:show();">What's the answere?</a><div style="display: none;" id="answer"><hr>Mc. Fly</div><br><br><br>
+        <br>
+        
+        <br><br><a href="{{'/puzzles/egtw' | relative_url }}">More emoji guess the words</a><br>
+<script>
+    function show() {
+        document.getElementById('answer').style.display = 'block';
+        document.getElementById('show').href = "";
+        document.getElementById('show').innerHTML = "Close";
+    }
+</script>

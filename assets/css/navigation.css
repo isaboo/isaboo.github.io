@@ -9,6 +9,7 @@
     position: fixed;
     top: 0px;
     margin: 0px auto;
+    z-index: 100;
 }
 .expandhidden {
     z-index: -10;
