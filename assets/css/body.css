@@ -4,7 +4,9 @@
     padding: 20px;
     text-align: left;
     display: block;
-    margin-top: 45px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    height: 130px;
 }
 
 .box a {
@@ -43,13 +45,15 @@
 
 .box.about {
     float: right;
-    width: 33.1%;
+    width: 32%;
     margin-top: 20px;
     margin-left: 20px;
     height: 335px;
-    overflow: hidden;
 }
-
+.box.about .inner {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .box.trailer {
     float: right;
     width: 35%;
@@ -82,37 +86,37 @@
     display: none;
 }
 
-@media only screen and (max-width: 1904px) {
+@media only screen and (max-width: 1920px) {
     .box.about {
         width: 32%;
     }
 }
 
-@media only screen and (max-width: 1890px) {
+@media only screen and (max-width: 1905px) {
     .box.about {
         width: 30%;
     }
 }
 
-@media only screen and (max-width: 1828px) {
+@media only screen and (max-width: 1860px) {
     .box.about {
         width: 27%;
     }
 }
 
-@media only screen and (max-width: 1769px) {
+@media only screen and (max-width: 1786px) {
     .box.about {
         width: 25%;
     }
     .box.plug {
-        margin-left: 40px;
+        margin-left: 29px;
     }
     .box.poll {
-        margin-left: 40px;
+        margin-left: 29px;
     }
 }
 
-@media only screen and (max-width: 1740px) {
+@media only screen and (max-width: 1756px) {
     .box.about {
         width: 18%;
     }
@@ -126,7 +130,7 @@
     }
 }
 
-@media only screen and (max-width: 1666px) {
+@media only screen and (max-width: 1685px) {
     .box.about {
         width: 97%;
         float: none;
@@ -134,14 +138,14 @@
     }
     .box.plug {
         height: 340px;
-        width: 25%;
-        margin-left: 5px;
+        width: 23%;
+        margin-left: 15px;
     }
     .box.poll {
         height: 337px;
         float: right;
         width: 25%;
-        margin-left: 12px;
+        margin-left: 5px;
     }
     #right {
         display: none;
@@ -162,7 +166,7 @@
     }
 }
 
-@media only screen and (max-width: 1476px) {
+@media only screen and (max-width: 1480px) {
     .box.poll {
         float: right;
         margin-top: 20px;
@@ -192,11 +196,11 @@
         display: block;
     }
     .box.welcome {
-        width: 99%;
+        width: 96.5%;
     }
 }
 
-@media only screen and (max-width: 1330px) {
+@media only screen and (max-width: 1340px) {
     .box.recents {
         width: 54%;
     }
@@ -208,7 +212,7 @@
     }
 }
 
-@media only screen and (max-width: 1205px) {
+@media only screen and (max-width: 1220px) {
     .box.recents {
         width: 56%;
     }
@@ -220,7 +224,7 @@
     }
 }
 
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 1175px) {
     .box.recents {
         width: 60%;
     }
@@ -306,7 +310,7 @@
     margin-right: -8px;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1110px) {
     .box.recents {
         width: 99%;
         margin-bottom: 20px;
@@ -362,6 +366,8 @@
     padding-right: 65px;
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 0px;
+    clear: both;
 }
 
 @media only screen and (max-width: 952px) {
@@ -398,40 +404,23 @@
         width: 99%;
         float: none;
         clear: both;
+        margin-top: 0px;
     }
     .box.plug {
         width: 99%;
         float: none;
         clear: both;
         margin-left: 3px;
+        margin-top: 20px;
     }
 }
-
-.news {
-    border: rgba(77, 77, 243, 0.582) 3px solid;
-    background-color: rgba(54, 54, 243, 0.055);
-    border-radius: 20px;
-    font-size: 18px;
-    height: 50px;
-    width: 405px;
-    margin-top: -80px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    padding-right: 5px;
+/* Markdown  */
+.content {
+    background-color: #3f3f3f;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: left;
+    display: block;
+    margin-top: 0px;
+    clear: both;
 }
-
-.news .inner {
-    margin-top: 13px;
-    margin-right: 5px;
-}
-
-.news i {
-    color: rgb(77, 77, 243);
-    font-size: 40px;
-    float: left;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-/* Icons */

@@ -19,12 +19,13 @@
         </div>
         <div class="box about" id="right">
             <h2>About:</h2>
-            {{ site.data.aboutsnippet }}
+            {{ site.data.aboutsnippet }}<br><br>
+            <a href="{{ '/about/' | relative_url }}">More about this website and me</a>
         </div>
         <div class="box plug">
             <h2>Find @Isaboo elsewhere:</h2>
             <div class="plug">
-                <img src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c545.png" class="yt-icon">Youtube
+                <img src="{{ '/assets/images/yt.png' | relative_url }}" class="yt-icon">Youtube
             </div>
             <div class="plug">
                 <img src="https://www.sferalabs.cc/wp-content/uploads/github-logo-white.png" class="gh-icon">Github
@@ -38,11 +39,13 @@
         <div class="box about" id="bottom">
             <h2>About:</h2>
             <div class="inner">
-                {{ site.data.aboutsnippet }}
+                {{ site.data.aboutsnippet }}<br><br>
+                <a href="{{ '/about/' | relative_url }}">More about this website and me</a>
             </div>
         </div>
         <div class="box trailer" id="under"></div>
     </div>
+    {% include footer.html %}
 </body>
 
 </html>

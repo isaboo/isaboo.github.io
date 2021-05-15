@@ -11,15 +11,18 @@
     margin: 0px auto;
 }
 .expandhidden {
+    z-index: -10;
     height: 0%;
     width: 100%;
     padding-top: 0px;
-    transition: .8s;
-    top: 5px;
+    position: fixed;
+    top: 36px;
+    transition: .5s;
 }
 .expandhidden a {
-    margin: 0px;
+    margin-top: 0px;
     font-size: 0px;
+    transition:  .4s;
 }
 .expand {
     background-color: rgba(62, 62, 238, 0.952);
@@ -28,11 +31,13 @@
     padding-top: 50px;
     position: fixed;
     top: 36px;
-    transition: .8s;
+    transition: .5s;
+    z-index: 100;
 }
 .expand a {
     margin: 20px;
-    font-size: 40px;
+    font-size: 30px;
+    transition: .4s;
 }
 .navbar img {
     width: 200px;

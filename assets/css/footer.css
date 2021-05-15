@@ -1,0 +1,27 @@
+.footer {
+    background-color: #191b1d;
+    bottom: -10px;
+    width: 100%;
+    clear: both;
+    float: left;
+    margin-top: 50px;
+    position: sticky;
+    height: 200px;
+}
+.footer .copy{
+    float: left;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.footer .links {
+    position: absolute;
+    right: 10px;
+    top: 40px;
+}
+.footer .thanks {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+}
