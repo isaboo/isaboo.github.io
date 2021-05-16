@@ -10,7 +10,7 @@ And Welcome to isaboo.co.uk. Here you can find games, puzzles, videos and more.
 I'm Isaac. A young coder from Britian.  I enjoy making games, websites and videos.  
 I make this website for _pure fun_ and to practice my coding skills.  
 
-I hope you enjoy using this website. If you have any suggestions, requests, or complaints post it as a [Github Issue](https://github.com/isaboo/suggestions/issues/1).
+I hope you enjoy using this website. If you have any suggestions, requests, or complaints then [visit my contact page](/contact/).
 
 This about page will get longer as time goes on.
 
