@@ -6,7 +6,7 @@
 - img: /assets/images/pcbtn.jpg
   name: Detonation
   about: Press one button to make your compuet look like it's crashed!
-  url: /Detonation/
+  url: /detonation/
   isNew: old
 - img: /assets/images/run.png
   name: Run!
