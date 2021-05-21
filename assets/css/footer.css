@@ -4,9 +4,9 @@
     width: 100%;
     clear: both;
     float: left;
-    margin-top: 50px;
-    position: sticky;
+    position: relative;
     height: 200px;
+    padding: 5px;
 }
 .footer .copy{
     float: left;

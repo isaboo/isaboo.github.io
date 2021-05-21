@@ -12,7 +12,14 @@
 .box a {
     text-decoration: underline;
 }
-
+.box.top {
+    width: 1000px;
+    max-width: 100%;
+    text-align: left;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .box a:hover {
     text-decoration: none;
 }
@@ -425,14 +432,23 @@
 .main {
     text-align: left;
 }
+.content-wrapper {
+    position: relative;
+}
 .content {
     background-color: #3f3f3f;
     border-radius: 7px;
     padding: 10px;
-    text-align: left;
+    padding-left: 20px;
     display: block;
     margin-top: 0px;
     clear: both;
+    width: 1000px;
+    max-width: 100%;
+    text-align: left;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 p {
     text-align: left;
