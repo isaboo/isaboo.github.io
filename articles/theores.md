@@ -1,6 +1,6 @@
 ---
 title: Weird, crazy and spooky theories
-date: 25/5/21
+date: 22/5/21
 layout: article
 permalink: /texts/weird-crazy-and-spooky-theories
 ---
@@ -90,7 +90,7 @@ How and why are cropcircles made?
 
 ### Theory 1
 
-In 1980, someone suggests that cropcircles were formed especially vigorous activity of horny hedgehogs. How this would form complex designs? I have no clue.
+In 1980, someone suggests that cropcircles were formed by the activity of hedgehogs. How this would form complex designs? I have no clue.
 
 ### Theory 2 
 
