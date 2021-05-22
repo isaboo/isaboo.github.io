@@ -90,7 +90,7 @@ How and why are cropcircles made?
 
 ### Theory 1
 
-In 1980, someone suggests that cropcircles were formed especially vigorous activity of horny hedgehogs. How this would form complex designs? I have no clue.
+In 1980, someone suggests that cropcircles were formed by the activity of hedgehogs. How this would form complex designs? I have no clue.
 
 ### Theory 2 
 
