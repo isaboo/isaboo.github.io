@@ -1,0 +1,5 @@
+- img: /assets/images/pcbtn.jpg
+  name: Button of Detonation
+  about: Press one button to make your computer look like it's crashed!
+  url: /detonation/
+  isNew: old

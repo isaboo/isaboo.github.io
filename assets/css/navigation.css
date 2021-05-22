@@ -48,7 +48,7 @@
     display: none;
     font-size: 30px;
 }
-@media only screen and (max-width: 727px) {
+@media only screen and (max-width: 781px) {
     .navbar {
        padding: 5px;
        padding-left: 0px;

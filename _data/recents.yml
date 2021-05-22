@@ -9,7 +9,7 @@
   url: /reactiontester/
   isNew: old
 - img: /assets/images/pcbtn.jpg
-  name: Detonation
-  about: Press one button to make your compuet look like it's crashed!
+  name: Button of Detonation
+  about: Press one button to make your computer look like it's crashed!
   url: /detonation/
   isNew: old
