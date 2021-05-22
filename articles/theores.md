@@ -1,6 +1,6 @@
 ---
 title: Weird, crazy and spooky theories
-date: 25/5/21
+date: 22/5/21
 layout: article
 permalink: /texts/weird-crazy-and-spooky-theories
 ---
