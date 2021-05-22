@@ -1,15 +1,15 @@
+- img: /assets/images/theories.jpg
+  name: Weird, crazy and spooky theories
+  about: Have a read through some mind-blowing conspiracies.
+  url: /texts/weird-crazy-and-spooky-theories
+  isNew: recent
 - img: /assets/images/reactiontester.png
   name: Reaction Tester
   about: Test your reactions and compete with your friends and get a brain speed.
   url: /reactiontester/
-  isNew: recent
+  isNew: old
 - img: /assets/images/pcbtn.jpg
   name: Detonation
   about: Press one button to make your compuet look like it's crashed!
   url: /detonation/
-  isNew: old
-- img: /assets/images/run.png
-  name: Run!
-  about: A simple classic infinite runner game which is tricky but addctive!
-  url: /RunGame
   isNew: old

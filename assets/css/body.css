@@ -282,7 +282,7 @@
 }
 
 .box .item.recent .name {
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .box .item.recent .about {
@@ -350,7 +350,14 @@
         width: 100%;
         height: 80px;
         object-fit: cover;
+        object-position: 0 -20px;
         border-radius: 4px;
+    }
+    .box .item.recent .name {
+        font-size: 18px;
+    }
+    .box .item.recent .about {
+        font-size: 13px;
     }
     .box .item {
         height: 150px;
@@ -449,6 +456,7 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    min-height: 500px;
 }
 p {
     text-align: left;
