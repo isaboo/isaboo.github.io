@@ -1,7 +1,7 @@
 ---
 layout: cat
 title: Buttons
-permalink: /btns/
+permalink: /buttons/
 longtitle: Push some buttons, do to cool things
 type: buttons
 ---
