@@ -6,7 +6,7 @@
 - img: /assets/images/gifbtn.png
   name: The GIF Button
   about: Cycle some wild and crazy GIFs
-  url: /buttons/buttonofgif/
+  url: /button/buttonofgif/
   isNew: old
 - img: /assets/images/reactiontester.png
   name: Reaction Tester
