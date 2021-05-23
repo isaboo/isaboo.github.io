@@ -1,10 +1,10 @@
 - img: /assets/images/gifbtn.png
   name: The GIF Button
   about: Cycle some wild and crazy GIFs
-  url: /buttons/buttonofgif
+  url: /button/buttonofgif
   isNew: old
 - img: /assets/images/pcbtn.jpg
   name: Button of Detonation
   about: Press one button to make your computer look like it's crashed!
-  url: /buttons/detonation
+  url: /button/detonation
   isNew: old
