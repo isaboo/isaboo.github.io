@@ -1,12 +1,11 @@
 {% for item in site.data.recents %}
-    <a href="{{ item.url }}" class="itemlink">
     <div {% if item.isNew == "recent" %}class="item recent"{% endif %}
     {% if item.isNew == "old" %}class="item"{% endif %}>
-    <img src='{{ item.img }}'><br>
+    <a href="{{ item.url }}" class="itemlink">
+    <img src='{{ item.img }}'></a><br>
     <div class="name">{{ item.name }}</div>
     <div class="about">{{ item.about }}</div>
     {% if item.isNew == "recent" %}<br><br>{% endif %}
     <a href="{{ item.url }}">Take a look > </a>
     </div>
-    </a>
 {% endfor %}
