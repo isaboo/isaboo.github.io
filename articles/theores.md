@@ -39,7 +39,7 @@ See before 'Frozen' was released, a rumor was going around that Walt Disney, Dis
 
 But where does the movie 'Frozen' come in. Well I'm glad you asked!
 
-Disney has been trying to build a family and playful image for the past near century. So much so that they actually edited cigarettes out of Walt Disney's photograph. Even more so that in the contract, for being a person who dresses up as Disney movie characters at DisneyWorld, says 'actors cannot take of their costumes even **_to the point of drowning_**'. Yes you read that right: **_to the point of drowning_**. 
+Disney has been trying to build a family and playful image for the past near century. So much so that they actually edited cigarettes out of Walt Disney's photographs. Even more so, that in the contract for being a person who dresses up as Disney movie characters at DisneyWorld, says 'actors cannot take of their costumes even **_to the point of drowning_**'. Yes you read that right: **_to the point of drowning_**. 
 
 I, personally, would rather get fired than _drown to death_, but this goes to show just how focused Disney is on keeping it's image. But anyways...
 
@@ -47,7 +47,7 @@ Disney didn't want to have this silly rumor spreading (or perhaps it isn't a rum
 
 ## The Colour Theory
 
-<span style="color: rgb(136, 255, 0);">What colour is this text?</span> You probably said <span style="color: rgb(136, 255, 0);">green</span>, unless your colourblind in which you may have saw <span style="color: rgb(255, 0, 255);">purple</span>.
+<span style="color: rgb(136, 255, 0);">What colour is this text?</span> You probably said <span style="color: rgb(136, 255, 0);">green</span>, unless your colourblind in which you may have seen <span style="color: rgb(255, 0, 255);">purple</span>.
 
 But why did you see _that_ colour?
 
