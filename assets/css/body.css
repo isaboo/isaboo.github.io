@@ -256,10 +256,13 @@
     float: left;
     border-radius: 5px;
     position: relative;
+    transition: 0.5s;
+    transform: translateY(0px);
 }
-.itemlink {
-    color: currentColor;
-    text-decoraction: none;
+.box .item:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    transition: 0.5s;
 }
 .box .item img {
     width: 100%;
@@ -475,5 +478,9 @@ body {
     max-width: 100%;
 }
 .plug a {
+    text-decoration: none;
+}
+.itemlink {
+    color: currentColor;
     text-decoration: none;
 }

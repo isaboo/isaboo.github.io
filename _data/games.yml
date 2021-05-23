@@ -3,8 +3,10 @@
   about: Test your reactions and compete with your friends and get a brain speed.
   url: /reactiontester/
   isNew: recent
+  number: one
 - img: /assets/images/run.png
   name: Run
   about: A fast and simple platformer game
   url: /RunGame/
   isNew: recent
+  number: two

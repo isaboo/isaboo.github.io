@@ -9,12 +9,11 @@
             height: 280px;
             width: 340px;
             margin: 6px;
-            float: left;
             border-radius: 5px;
             position: relative;
-            clear: both;
+            transition: 0.5s;
+            transform: translate(0px);
         }
-
         .item img {
             object-fit: cover;
             border-radius: 4px;
@@ -33,6 +32,12 @@
             position: absolute;
             bottom: 1px;
             right: 1px;
+
+}
+        .item:hover {
+            transform: translateY(-5px);
+    cursor: pointer;
+    transition: 0.5s;
         }
     </style>
 </head>

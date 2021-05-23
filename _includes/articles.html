@@ -1,5 +1,5 @@
 {% for item in site.data.articles %}
-    <div {% if item.isNew == "recent" %}class="item recent"{% endif %}
+    <div onclick="window.location='{{item.url}}'"{% if item.isNew == "recent" %}class="item recent"{% endif %}
     {% if item.isNew == "old" %}class="item"{% endif %}>
     <img src='{{ item.img }}'><br>
     <div class="name">{{ item.name }}</div>
