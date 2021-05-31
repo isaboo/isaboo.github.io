@@ -23,6 +23,14 @@ Let's get started.
 ### Part 2: Creating a webpage
 
 - Copy the following code into the file.
-{% highlight html %}
+{% highlight html linenos%}
 <!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website<title>
+  </head>
+  <body>
+    
+  </body>
+ </html>
 {% endhighlight %}
