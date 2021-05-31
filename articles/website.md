@@ -55,5 +55,22 @@ Whatever is inside the `<body` and `</body>` is what appears on the page.
     
 <div style="background-color: white; font-family: serif; padding: 10px; color: black;">
   <h1>Hello Everyone!</h1>
-</div> 
+</div>
+    
+- Copy this code:
+{% highlight xml linenos%}
+    <h1>Hello Everyone!</h1>
+    <h2>Hello Everyone!</h2>
+    <h3>Hello Everyone!</h3>
+    <h4>Hello Everyone!</h4>
+    <p>Hello Everyone!</p>
+{% endhighlight %}
+- and you should see this:
+<div style="background-color: white; font-family: serif; padding: 10px; color: black;">
+  <h1>Hello Everyone!</h1>
+    <h2>Hello Everyone!</h2>
+    <h3>Hello Everyone!</h3>
+    <h4>Hello Everyone!</h4>
+    <p>Hello Everyone!</p>
+</div>
 
