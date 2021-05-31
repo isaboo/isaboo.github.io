@@ -23,7 +23,7 @@ Let's get started.
 ### Part 2: Creating a webpage
 
 - Copy the following code into the file.
-{% highlight html linenos%}
+{% highlight xml linenos%}
 <!DOCTYPE html>
 <html>
   <head>
@@ -34,3 +34,4 @@ Let's get started.
   </body>
  </html>
 {% endhighlight %}
+- Find your folder on the desktop, open it and open the _website.html_ in the browser by double clicking on it. You will see a blank screen. That's because we havn't put any 
