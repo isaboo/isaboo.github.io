@@ -34,9 +34,26 @@ Let's get started.
   </body>
  </html>
 {% endhighlight %}
+- Save the file by doing Ctrl+S or File > Save
 - Find your folder on the desktop, open it and open the _website.html_ in the browser by double clicking on it. You will see a blank screen. That's because we havn't put any content in it.
 
 ### Part 3: Adding content
-    
+
 Whatever is inside the `<body` and `</body>` is what appears on the page.
+
+{% highlight xml linenos%}
+<body>
+  -What appears on the page-
+</body>
+{% endhighlight %}
+    
+- Add a heading by adding the following code to the `<body>`
+{% highlight xml linenos%}
+    <h1>Hello Everyone!</h1>
+{% endhighlight %}
+- Save and then go to the browser and press the refresh button. You should see something like this.
+    
+<div style="background-color: white; font-family: serif; padding: 10px;">
+  <h1>Hello Everyone!</h1>
+</div> 
 
