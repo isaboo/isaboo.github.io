@@ -53,7 +53,7 @@ Whatever is inside the `<body` and `</body>` is what appears on the page.
 {% endhighlight %}
 - Save and then go to the browser and press the refresh button. You should see something like this.
     
-<div style="background-color: white; font-family: serif; padding: 10px;">
+<div style="background-color: white; font-family: serif; padding: 10px; color: black;">
   <h1>Hello Everyone!</h1>
 </div> 
 
