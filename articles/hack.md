@@ -3,13 +3,13 @@ title: How to change a website
 date: TBC
 layout: article
 permalink: /texts/change-a-website
-image: https://ourcodeworld.com/public-media/articles/articleocw-5717cba784d6f.png
+image: /assets/images/changeweb.png
 ---
 This trick is simple but will impress your friends to make them think your a hacker or to prank them. And it's quite a cool trick anyway!
 
 #### _Notice_: This is not actually hacking!
 
-Before we begin, make sure your using one of the following browsers:
+Before we begin, make sure your using one of the following browsers _on a desktop computer, you can't do this on a Tablet or Phone_:
 
 - [Google Chrome](https://www.google.com/search?q=Google%20Chrome)
 - [The New Microsoft Edge](https://www.google.com/search?q=Microsoft%20Edge)

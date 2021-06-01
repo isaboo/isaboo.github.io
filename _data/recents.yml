@@ -1,15 +1,15 @@
+- img: /assets/images/changeweb.png
+  name: Change a website
+  about: Prank or impress your firends by changing a website's contents!
+  url: /texts/change-a-website
+  isNew: recent
 - img: /assets/images/theories.jpg
   name: Weird, crazy and spooky theories
   about: Have a read through some mind-blowing conspiracies.
   url: /texts/weird-crazy-and-spooky-theories
-  isNew: recent
+  isNew: old
 - img: /assets/images/gifbtn.png
   name: The GIF Button
   about: Cycle some wild and crazy GIFs
   url: /button/buttonofgif/
-  isNew: old
-- img: /assets/images/reactiontester.png
-  name: Reaction Tester
-  about: Test your reactions and compete with your friends and get a brain speed.
-  url: /reactiontester/
   isNew: old
