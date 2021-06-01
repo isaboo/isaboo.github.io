@@ -1,14 +1,14 @@
 - name: Home
   link: /
 - name: About
-  link: /about/
+  link: /about
 - name: Videos
-  link: /videos/
+  link: /videos
 - name: Games
-  link: /games/
+  link: /games
 - name: Puzzles
-  link: /puzzles/
+  link: /puzzles
 - name: Buttons
-  link: /buttons/
+  link: /buttons
 - name: Articles
-  link: /text/
+  link: /text

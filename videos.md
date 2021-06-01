@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Videos
-permalink: /videos/
+permalink: /videos
 longtitle: Check out my epic videos
 ---
 Coming soon!

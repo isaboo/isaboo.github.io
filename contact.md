@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Contact
-permalink: /contact/
+permalink: /contact
 longtitle: Have a suggestion, request or complaint? Get in touch.
 ---
 ### How to get in touch

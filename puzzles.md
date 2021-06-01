@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Puzzles
-permalink: /puzzles/
+permalink: /puzzles
 longtitle: Test your brain by uncovering some of my puzzles
 ---
 ## Emoji Guess the word collection

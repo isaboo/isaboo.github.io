@@ -3,6 +3,7 @@ title: Weird, crazy and spooky theories
 date: 22/5/21
 layout: article
 permalink: /texts/weird-crazy-and-spooky-theories
+image: /assets/images/theories.jpg
 ---
 I've spent the past couple of days researching and thinking of weird, crazy, spooky and possibly disturbing conspiracy theories. If you wish to continue reading please read the following statements:
 - Some may get you thinking, distracting you for the rest of the day.

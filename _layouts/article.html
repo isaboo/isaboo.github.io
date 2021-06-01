@@ -3,14 +3,47 @@
 
 <head>
     {% include header.html %}
+    <style>
+        .top-inner {
+            background-color: #242424ab;
+            padding: 10px;
+            padding-top: 2px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 98%;
+            filter: brightness(200%);
+            border-radius: 7px;
+            height: 100px;
+        }
+        .top-thumbnail {
+            background-image: url('{{ page.image }}');
+            background-repeat: no-repeat;
+            background-size: 1100px;
+            background-position: center;
+            filter: brightness(90%);
+            height: 200px;
+            border-radius: 7px;
+        }
+        @media only screen and (max-width: 781px) {
+            .top-thumbnail {
+                background-size: 800px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     {% include navigation.html %}
     <div class="main">
-        <div class="box top">
-            <h1>{{ page.title }}</h1>
-            <div class="date">{{page.date}}</div>
+        <div class="box top" style="position: relative; height: 200px; padding: 0px; width: 1030px;">
+            <div class="top-thumbnail"></div>
+            <div class="top-inner">
+                <h1>{{ page.title }}</h1>
+                <div class="date">{{page.date}}</div>
+            </div>
+            
+
         </div>
         <div class="content-wrapper">
             <div class="content">{{content}}</div>
