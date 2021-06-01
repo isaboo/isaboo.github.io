@@ -16,6 +16,9 @@
             border-radius: 7px;
             height: 100px;
         }
+        .top-inner h1 {
+            font-size: 30px;
+        }
         .top-thumbnail {
             background-image: url('{{ page.image }}');
             background-repeat: no-repeat;
@@ -29,6 +32,11 @@
             .top-thumbnail {
                 background-size: 800px;
             }
+        }
+        @media only screen and (max-width: 509px) {
+            .top-inner h1 {
+            font-size: 25px;
+        }
         }
     </style>
 </head>
