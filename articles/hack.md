@@ -24,7 +24,7 @@ First of all, [Click Here](/assets/other/devtoolsplayground.html){: target="_bla
 
 Now right click anywhere on the page and select inspect. What just popped up is the Browser DevTools. We'll be using this alot soon.
 
-#### Note: Someweb pages, such as games, don't allow you to right click. If so, use `Ctrl+Shift+I` / `F12` / `fn+F12`
+#### Note: Some webpages, such as games, don't allow you to right click. If so, use `Ctrl+Shift+I` / `F12` / `fn+F12`
 
 ### Step 2: Selecting an element.
 
@@ -71,8 +71,29 @@ Here are some examples:
 
 ## Examples
 
-### Slither.io score
+### Example 1: slither.io score
 
+- Use `Ctrl+Shift+I` / `F12` / `fn+F12` to launch the DevTools after completing a game.
+- Use the cursor icon to select the score text.
+- Change it something massive!  
+![Slither Hack Image](/assets/images/slitherhack.png)
+
+### Example 2: Rickroll!
+
+- Navigate to a youtube search for your friend's favourite youtuber.
+- Open the DevTools.
+- Use the cursor to select all the video links.
+- Change all the `href` values to `https://www.youtube.com/watch?v=dQw4w9WgXcQ`
+- When they get back, they'll get the biggest rickroll ever!
+
+### Example 3: Wrong Facts.
+
+- Search Google for a fact of key importance.
+- Open the DevTools.
+- Change the facts.  
+![US Fake founding date](/assets/images/usfakeday.png){: width="700px"}
+
+There are endless pranks and jokes you can do with this. Aslong as you don't use it to break the law (if you figure out a way!)
 
 
 

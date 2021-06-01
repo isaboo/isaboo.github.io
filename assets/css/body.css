@@ -464,6 +464,9 @@
     transform: translateX(-50%);
     min-height: 500px;
 }
+.content img {
+    max-width: 100%;
+}
 p {
     text-align: left;
 }
