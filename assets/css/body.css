@@ -484,6 +484,10 @@ body {
     color: currentColor;
     text-decoration: none;
 }
-.topthumbnail {
-    
+code {
+    background-color: #252525;
+    color: #c4c4dd;
+    border-radius: 5px;
+    padding: 2px;
+    font-family: monospace;
 }
