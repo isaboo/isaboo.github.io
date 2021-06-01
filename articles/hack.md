@@ -41,4 +41,5 @@ Now right click anywhere on the page and select inspect. What just popped up is 
 - The part which appears white is what we want to change. Change it to anything you want.  
 ![To edit](/assets/images/textedit.png)
 - Click on another element to exit out and you'll see the content has chnaged to what you typed.
-![To be embeded]
+
+### Step 4: Changing links
