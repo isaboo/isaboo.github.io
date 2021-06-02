@@ -4,7 +4,7 @@
     {% for item in site.data.navigation %}
     <a href="{{ item.link | relative_url }}" {% if page.url==item.link %}class="current" {% endif %}>{{ item.name }}</a>
     {% endfor %}
-    
+
   </div>
   <div class="menuicon" onclick="expand(this);" id="btn"><i id="chevron" class="fas fa-chevron-circle-down"></i><span
       class="sr-only">Menu</span></div>
@@ -14,7 +14,8 @@
     {% endfor %}
   </div>
 </nav>
-<input class="bar" type="search" id="searchbar" onfocus="openresults()" onblur="closeresults()" onkeyup="refresh(this.value)" placeholder="Search..." />
+<input class="bar" type="search" id="searchbar" onfocus="openresults()" onblur="closeresults()"
+  onkeyup="refresh(this.value)" placeholder="Search..." />
 <div class="hidden" id="results">No results</div>
 
 <script src="{{ '/assets/js/navigation.js' | relative_url }}"></script>
@@ -83,7 +84,7 @@
     var before = document.getElementById("results").innerHTML;
     var html = "";
     query = query + " e";
-    if(query == " e") {
+    if (query == " e") {
       document.getElementById("results").innerHTML = "<h3>Start typing to search</h3>";
       return;
     }
@@ -96,15 +97,18 @@
       var url = db[id].url;
       html = html + "<br><br><a href='" + url + "'><span id='h2' style='font-size: 22px;'>" + name + "</span><br>" + text + "</a>";
       document.getElementById("results").innerHTML = html;
+    }
   }
-  }
-  
+
   function openresults() {
     document.getElementById("results").className = "results";
     document.getElementById("results").innerHTML = "<h3>Start typing to search</h3>";
   }
   function closeresults() {
-    document.getElementById("results").className = "hidden";
-    document.getElementById("results").innerHTML = "<h3>Start typing to search</h3>";
+    window.setTimeout(function () {
+      document.getElementById("results").className = "hidden";
+      document.getElementById("results").innerHTML = "<h3>Start typing to search</h3>";
+    }, 500, false)
+
   }
 </script>
