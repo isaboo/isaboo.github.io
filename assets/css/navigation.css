@@ -69,7 +69,7 @@
         display: none;
     }
 }
-@media only screen and (min-width: 727px) {
+@media only screen and (min-width: 1004px) {
     #expand {
         display: none;
     }
@@ -138,14 +138,24 @@
         height: 32px;
     }
     .bar:focus {
-        width: 90%;
+        width: 740px;
     }
     .results {
         top: 34px;
     }
 }
-@media only screen and (max-width: 398px) {
-    .bar {
-        width: 150px;
+@media only screen and (max-width: 942px) {
+    .bar:focus {
+        width: 95%;
+        max-width: none;
     }
+    .results {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 670px) {
+    .bar:focus {
+        width: 90%;
+    }
+
 }

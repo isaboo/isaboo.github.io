@@ -80,6 +80,7 @@
   });
 
   function refresh(query) {
+    var before = document.getElementById("results").innerHTML;
     var html = "";
     query = query + " e";
     if(query == " e") {
@@ -95,7 +96,10 @@
       var url = db[id].url;
       html = html + "<br><br><a href='" + url + "'><span id='h2' style='font-size: 22px;'>" + name + "</span><br>" + text + "</a>";
       document.getElementById("results").innerHTML = html;
-    }
+  }
+  if(before == document.getElementById("results").innerHTML) {
+    document.getElementById("results").innerHTML = "<h3>No results found</h3>"
+  }
   }
   
   function openresults() {
