@@ -2,14 +2,108 @@
   <a href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/logo.png' | relative_url }}"></a>
   <div class="links">
     {% for item in site.data.navigation %}
-      <a href="{{ item.link | relative_url }}" {% if page.url==item.link %}class="current" {% endif %}>{{ item.name }}</a>
+    <a href="{{ item.link | relative_url }}" {% if page.url==item.link %}class="current" {% endif %}>{{ item.name }}</a>
     {% endfor %}
-
+    
   </div>
-  <div class="menuicon" onclick="expand(this);" id="btn"><i id="chevron" class="fas fa-chevron-circle-down"></i><span class="sr-only">Menu</span></div>
+  <div class="menuicon" onclick="expand(this);" id="btn"><i id="chevron" class="fas fa-chevron-circle-down"></i><span
+      class="sr-only">Menu</span></div>
   <div class="expandhidden" id="expand">{% for item in site.data.navigation %}
-    <a href="{{ item.link | relative_url }}" {% if page.url==item.link %}class="current" {% endif %}>{{ item.name }}</a><br>
-  {% endfor %}</div>
+    <a href="{{ item.link | relative_url }}" {% if page.url==item.link %}class="current" {% endif %}>{{ item.name
+      }}</a><br>
+    {% endfor %}
+  </div>
 </nav>
+<input class="bar" type="search" id="searchbar" onfocus="openresults()" onblur="closeresults()" onkeyup="refresh(this.value)" placeholder="Search..." />
+<div class="hidden" id="results">No results</div>
 
 <script src="{{ '/assets/js/navigation.js' | relative_url }}"></script>
+
+<script defer>
+  var documents = [{
+    "id": 1,
+    "name": "Run!",
+    "text": "A fast and simple platformer game",
+    "words": "r ru Run! Runner Platformer game",
+    "url": "https://www.isaboo.co.uk/RunGame"
+  }, {
+    "id": 2,
+    "name": "Reaction Tester",
+    "text": "Test your reactions and compete with your friends and get a brain speed.",
+    "words": "r re rea reac react reacti reactio Reaction Tester ReactionTester Game Speed",
+    "url": "https://www.isaboo.co.uk/ReactionTester"
+  }, {
+    "id": 3,
+    "name": "The GIF Button",
+    "text": "Cycle through some wild and crazy GIFs",
+    "words": "g gi GIF Button GIFButton! Funny Crazy Humor Laugh Bonkers",
+    "url": "https://www.isaboo.co.uk/button/buttonofgif"
+  },
+  {
+    "id": 4,
+    "name": "Button of Detonation",
+    "text": "A button which makes a computer look like its crashed",
+    "words": "d de det deto deton detona detonat detonati detonatio detonation Crash Explode Brake Prank button",
+    "url": "https://www.isaboo.co.uk/button/buttonofgif"
+  },
+  {
+    "id": 5,
+    "name": "Weird, Crazy and Spooky Theories",
+    "text": "Have a read through this intresting list of conspiracies",
+    "words": "Conspiracy article bonkers frozen cropcircle colours colors nasa w we wei weir weird t th the theo theor theori theorie theories theory",
+    "url": "https://www.isaboo.co.uk/button/buttonofgif"
+  },
+  {
+    "id": 6,
+    "name": "Change a website",
+    "text": "Prank or impress your firends by changing a website's contents!",
+    "words": "C Ch Chan Chang Change a w we web webs websi websit website hack h ha hac",
+    "url": "https://www.isaboo.co.uk/button/buttonofgif"
+  },
+  ];
+
+  var db = documents.reduce(function (acc, document) {
+    acc[document.id] = document
+    return acc
+  }, {})
+  console.log(db);
+
+  var idx = lunr(function () {
+    this.ref('id')
+    this.field('words')
+    this.field('name')
+    this.metadataWhitelist = ['text']
+
+    documents.forEach(function (doc) {
+      this.add(doc)
+    }, this)
+  });
+
+  function refresh(query) {
+    var html = "";
+    query = query + " e";
+    if(query == " e") {
+      document.getElementById("results").innerHTML = "<h3>Start typing to search</h3>";
+      return;
+    }
+    var results = idx.search(query);
+    for (i = 0; i < results.length; i++) {
+      var id = results[i].ref;
+      console.log(results[i].score);
+      var name = db[id].name;
+      var text = db[id].text;
+      var url = db[id].url;
+      html = html + "<br><br><a href='" + url + "'><span id='h2' style='font-size: 22px;'>" + name + "</span><br>" + text + "</a>";
+      document.getElementById("results").innerHTML = html;
+    }
+  }
+  
+  function openresults() {
+    document.getElementById("results").className = "results";
+    document.getElementById("results").innerHTML = "<h3>Start typing to search</h3>";
+  }
+  function closeresults() {
+    document.getElementById("results").className = "hidden";
+    document.getElementById("results").innerHTML = "<h3>Start typing to search</h3>";
+  }
+</script>

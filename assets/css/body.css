@@ -494,3 +494,9 @@ code {
     padding: 2px;
     font-family: monospace;
 }
+#search a {
+    text-decoration: none;
+}
+#search #h2 {
+    text-decoration: underline;
+}
