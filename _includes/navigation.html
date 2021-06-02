@@ -6,7 +6,7 @@
     {% endfor %}
 
   </div>
-  <div class="menuicon" onclick="expand(this);" id="btn"><i id="chevron" class="fas fa-chevron-circle-down"></i><span
+  <div class="menuicon" onclick="expand(this);" id="btn"><i id="chevron" class="fas fa-bars"></i><span
       class="sr-only">Menu</span></div>
   <div class="expandhidden" id="expand">{% for item in site.data.navigation %}
     <a href="{{ item.link | relative_url }}" {% if page.url==item.link %}class="current" {% endif %}>{{ item.name
@@ -103,11 +103,15 @@
   function openresults() {
     document.getElementById("results").className = "results";
     document.getElementById("results").innerHTML = "<h3>Start typing to search</h3>";
+    document.getElementById("btn").onclick = closeresults;
+    document.getElementById("chevron").classList = "fas fa-times";
   }
   function closeresults() {
     window.setTimeout(function () {
       document.getElementById("results").className = "hidden";
       document.getElementById("results").innerHTML = "<h3>Start typing to search</h3>";
+      document.getElementById("btn").onclick = expand;
+    document.getElementById("chevron").classList = "fas fa-bars";
     }, 500, false)
 
   }
