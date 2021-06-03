@@ -1,0 +1,162 @@
+---
+permalink: /init/lt
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to isaboo.co.uk</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background-color: #292929;
+            color: white;
+            position: relative;
+        }
+
+        html,
+        body {
+            max-width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .load {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #text-box {
+            background-color: #878788;
+            position: absolute;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        .textbox-position-1 {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 1s;
+            z-index: 100;
+        }
+
+        .top-left {
+            transform: translate(-2000px, -2000px);
+            transition: 1s;
+        }
+
+        .hidden {
+            display: none;
+            position: absolute;
+            bottom: -1000px;
+            left: 30%;
+        }
+
+        .person {
+            width: 300px;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+        .laptop {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .items {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            filter: invert();
+        }
+        .item-1 {
+            display: block;
+            float: left;
+            transition: 1s;
+        }
+        .item-2 {
+            display: block;
+            float: left;
+            transition: 1s;
+        }
+        .item-3 {
+            display: block;
+            float: left;
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="text-box" class="textbox-position-1">Hi! I'm Isaac.<br>A young coder from Britian.</div>
+        <img id="laptop" src="/assets/images/laptop.png" class="hidden" width="300px">
+        <div class="items">
+            <img id="item-1" class="hidden" width="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Video_game_controller_icon_designed_by_Maico_Amorim.svg/1200px-Video_game_controller_icon_designed_by_Maico_Amorim.svg.png">
+            <img id="item-2" class="hidden" width="100px" src="https://pics.freeicons.io/uploads/icons/png/14026977131586787991-512.png">
+            <img id="item-3" class="hidden" width="100px" src="https://static.thenounproject.com/png/949831-200.png">
+        </div>
+    </div>
+
+
+
+    <script defer>
+        var id = null;
+        function sequence1() {
+            var elem = document.getElementById("text-box");
+            var pos = 200;
+            clearInterval(id);
+            id = setInterval(frame, 1);
+            function frame() {
+                if (pos == 176) {
+                    clearInterval(id);
+                    document.getElementById("text-box").innerHTML = "And welcome to my website.<br>isaboo.co.uk";
+                    document.getElementById("laptop").className = "laptop";
+                    window.setTimeout(sequence2, 2000, false);
+                    
+                } else {
+                    pos = pos - 2;
+                    elem.style.top = pos + 'px';
+                }
+            }
+        }
+        function sequence2() {
+            document.getElementById("laptop").className = "hidden";
+            document.getElementById("text-box").innerHTML = "Here you can find:<br>games, articles and buttons!";
+            document.getElementById("item-1").className = "item-1";
+            document.getElementById("item-2").className = "item-2";
+            document.getElementById("item-3").className = "item-3";
+            window.setTimeout(finish, 2200, false)
+        }
+        window.setTimeout(sequence1, 1800, false);
+        function finish() {
+            localStorage.previsit = true;
+            window.location = "/";
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>
