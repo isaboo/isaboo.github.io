@@ -275,7 +275,7 @@
     height: auto;
     width: 100%;
     height: 160px;
-    object-position: left top;
+    object-position: 50% 50%;
 }
 
 .box .item.recent {
