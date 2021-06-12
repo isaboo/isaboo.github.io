@@ -13,6 +13,7 @@
             position: relative;
             transition: 0.5s;
             transform: translate(0px);
+            clear: both;
         }
         .item img {
             object-fit: cover;
@@ -39,6 +40,11 @@
     cursor: pointer;
     transition: 0.5s;
         }
+        .content::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
     </style>
 </head>
 
@@ -49,7 +55,7 @@
             <h1>{{ page.title }}</h1>
             {{ page.longtitle }}
         </div>
-        <div class="content" style="height: 600px;">
+        <div class="content">
             {% include {{ page.type}}.html %}
         </div>
 

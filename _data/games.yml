@@ -1,12 +1,18 @@
+- img: /assets/images/joedrop.png
+  name: Joe Drop
+  about: Hit Donald Trump with Joe Biden's head!
+  url: /joedrop/
+  isNew: recent
+  number: one
 - img: /assets/images/reactiontester.png
   name: Reaction Tester
   about: Test your reactions and compete with your friends and get a brain speed.
   url: /reactiontester/
   isNew: recent
-  number: one
+  number: two
 - img: /assets/images/run.png
   name: Run
   about: A fast and simple platformer game
   url: /RunGame/
   isNew: recent
-  number: two
+  number: three
