@@ -1,0 +1,10 @@
+{% for item in site.data.videos %}
+    <div onclick="window.location='{{item.url}}'" {% if item.isNew == "recent" %}class="item recent"{% endif %}
+    {% if item.isNew == "old" %}class="item"{% endif %}>
+    <img src='{{ item.img }}'><br>
+    <div class="name">{{ item.name }}</div>
+    <div class="about">{{ item.about }}</div>
+    {% if item.isNew == "recent" %}<br><br>{% endif %}
+    <a href="{{ item.url }}">Take a look > </a>
+    </div>
+{% endfor %}

@@ -11,7 +11,7 @@
         <div class="box welcome">
             {{ content }}
         </div>
-        <div class="box trailer" id="top">Most recent video: <br><br><a href="{{site.data.vid.url}}">{{ site.data.vid.text }}</a></div>
+        <div class="box trailer" id="top">Most recent video: <br><br><a href="{{site.data.vid.url}}"><img src="{{ site.data.vid.img }}" width="250px"/><br>{{ site.data.vid.text }}</a></div>
         <br clear="all">
         <div class="box recents">
             <h2>Recents Items</h2>
@@ -44,7 +44,7 @@
                 <a href="{{ '/about/' | relative_url }}">More about this website and me</a>
             </div>
         </div>
-        <div class="box trailer" id="under">Most recent video: <br><br><a href="{{site.data.vid.url}}">{{ site.data.vid.text }}</a></div>
+        <div class="box trailer" id="under">Most recent video: <br><br><a href="{{site.data.vid.url}}"><img src="{{ site.data.vid.img }}" width="250px"/><br>{{ site.data.vid.text }}</a></div>
     </div>
     {% include footer.html %}
 </body>
