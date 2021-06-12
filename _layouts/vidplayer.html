@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include header.html %}
+    <style>
+        .metas {
+            float: right;
+        }
+        .content::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+iframe {
+    max-width: 100%;
+}
+.box.top {
+    height: 200px;
+}
+    </style>
+</head>
+
+<body>
+    {% include navigation.html %}
+    <div class="main">
+        <div class="box top">
+            <h1 id="title">{{ page.title }}</h1>
+            <h3>{{ page.longtitle }}</h3>
+        </div>
+        <div class="content">
+            <iframe
+            {% if page.short == true %}
+                width="420"
+                height="720"
+            {% endif %}
+            {% if page.short == false %}
+                width="560"
+                height="315"
+            {% endif %}
+            src="https://www.youtube.com/embed/{{ page.id }}"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="metas">
+                <br>Description:<br><br>
+                {{page.description}}<br><br>
+                <br><br>Key video infomation:<br><br>
+                <ul>{{ page.info }}</ul>
+                {% if page.short == true %}
+                <a href="https://www.youtube.com/shorts/{{page.id}}">Watch on YouTube<span id="yttype"></span></a>
+                {% endif %}
+            </div>
+            <br clear="both"/>
+        </div>
+
+    </div>
+    {% include footer.html %}
+    <script>
+        var short = {{ page.short }};
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            if (short == true) {
+                document.getElementById("yttype").innerHTML = " App (Shorts)";
+            }
+            if (short == false) {
+                document.getElementById("yttype").innerHTML = " App";
+            }
+        }
+        else {
+            document.getElementById("yttype").innerHTML = ".com";
+        }
+    </script>
+</body>
+
+</html>
