@@ -4,6 +4,7 @@
     {% for item in site.data.navigation %}
     <a href="{{ item.link | relative_url }}" {% if page.url==item.link %}class="current" {% endif %}>{{ item.name }}</a>
     {% endfor %}
+    <span href="about:blank" id="obscure" title="Go to a random item on this website." onmouseover="obscure(this);" onclick="random();" onmouseleave="leaveobscure(this);">? ? ? ? ? ?</span>
 
   </div>
   <div class="menuicon" onclick="expand(this);" id="btn"><i id="chevron" class="fas fa-bars"></i><span
@@ -12,6 +13,7 @@
     <a href="{{ item.link | relative_url }}" {% if page.url==item.link %}class="current" {% endif %}>{{ item.name
       }}</a><br>
     {% endfor %}
+    <a id="obscure1" title="Go to a random item on this website." href="javascript:void(0)" onmouseover="obscure(this);" onclick="random();" onmouseleave="leaveobscure(this);">? ? ? ? ? ?</a>
   </div>
 </nav>
 <input class="bar" type="text" id="searchbar" onfocus="openresults()" onblur="closeresults()"
@@ -19,19 +21,21 @@
 <div class="hidden" id="results">No results</div>
 
 <script src="{{ '/assets/js/navigation.js' | relative_url }}"></script>
-
+<script async>
+  
+</script>
 <script defer>
   var documents = [{
     "id": 1,
     "name": "Run!",
     "text": "A fast and simple platformer game",
-    "words": "r ru Run! Runner Platformer game",
+    "words": "r ru Run! Runner Platformer g ga gam",
     "url": "https://www.isaboo.co.uk/RunGame"
   }, {
     "id": 2,
     "name": "Reaction Tester",
     "text": "Test your reactions and compete with your friends and get a brain speed.",
-    "words": "r re rea reac react reacti reactio Reaction Tester ReactionTester Game Speed",
+    "words": "r re rea reac react reacti reactio Reaction Tester ReactionTester Game Speed g ga gam",
     "url": "https://www.isaboo.co.uk/ReactionTester"
   }, {
     "id": 3,
@@ -67,6 +71,20 @@
     "text": "Let the Crystal Button predict the future.",
     "words": "The C Cr Cry Crys Cryst Crysta Crystal Button",
     "url": "https://www.isaboo.co.uk/button/crystalbutton"
+  },
+  {
+    "id": 8,
+    "name": "Joe Drop",
+    "text": "Hit Donald Trump with Joe Biden's head.",
+    "words": "J Jo Joe D Dr Dro Drop JoeD JoeDr JoeDro JoeDrop G Ga Gam Game M Me Mem Meme",
+    "url": "https://www.isaboo.co.uk/joedrop/"
+  },
+  {
+    "id": 9,
+    "name": "Fake hacking screen",
+    "text": "Just spam keys on your keyboard and it will look like your hacking!",
+    "words": "Fun Prank H Ha Hac Hack F Fa Fak Fake S Sp Spa Spam",
+    "url": "https://www.isaboo.co.uk/fakehack/"
   },
   ];
 
@@ -121,5 +139,27 @@
     document.getElementById("chevron").classList = "fas fa-bars";
     }, 500, false)
 
+  }
+
+  var intiv = null;
+  var ob;
+  function obscure(obin) {
+    ob = obin;
+    intiv = window.setInterval(obscurate, 10);
+  }
+  function leaveobscure(obint) {
+    obint.innerText = "? ? ? ? ? ?";
+    clearInterval(intiv);
+  }
+  function obscurate() {
+    var changes = ["? ? ? ? ? ?", "?????????", "?%?$?£&", "@£#$%", "$$$$$£", "&&&&", "-_-_-_-", "!!!!!", "*****"];
+    var ran = Math.floor(Math.random() * 8);
+    var change = changes[ran];
+    ob.innerText = change;
+  }
+  function random() {
+    var ran = Math.floor(Math.random() * 7);
+    var url = documents[ran].url;
+    window.location = url;
   }
 </script>

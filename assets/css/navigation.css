@@ -77,7 +77,7 @@
 .navbar .links {
     float: right;
     font-size: 20px;
-    margin-right: 250px;
+    margin-right: 330px;
     margin-top: 0px;
 }
 .navbar .links a {
@@ -159,3 +159,17 @@
     }
 
 }
+#obscure {
+    position: absolute;
+    right: 270px;
+    top: 20px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
