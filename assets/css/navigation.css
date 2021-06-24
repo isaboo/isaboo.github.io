@@ -48,28 +48,28 @@
     display: none;
     font-size: 30px;
 }
-@media only screen and (max-width: 1075px) {
+@media only screen and (max-width: 1190px) {
     .navbar {
        padding: 5px;
        padding-left: 0px;
-       
-    }
-    .navbar img {
+
+   }
+   .navbar img {
        width: 160px;
        margin: 5px;
        margin-top: -8px;
-    }
-    .navbar .menuicon {
-        display: block;
-        float: right;
-        margin-top: -5px;
-        margin-right: 5px;
-    }
-    .navbar .links {
-        display: none;
-    }
+   }
+   .navbar .menuicon {
+    display: block;
+    float: right;
+    margin-top: -5px;
+    margin-right: 5px;
 }
-@media only screen and (min-width: 1075px) {
+.navbar .links {
+    display: none;
+}
+}
+@media only screen and (min-width: 1190px) {
     #expand {
         display: none;
     }
@@ -131,14 +131,41 @@
     color: black;
     transition: 0.5s;
 }
-@media only screen and (max-width: 1075px) {
+.searchimg {
+    display: none;
+}
+@media only screen and (max-width: 1190px) {
     .bar {
-        right: 40px;
-        top: 3px;
-        height: 32px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: transparent 2px solid;
+        top: 0px;
+        right:  20px;
+        z-index: 102;
+        height: 30px;
+        width: 50px;
+    }
+    .searchimg {
+        width: 28px;
+        right:  25px;
+        top:  4px;
+        display: block;
+        position: absolute;
+        z-index: 101;
+    }
+    input.bar::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: transparent;
+    }
+    input.bar::-moz-placeholder { /* Firefox 19+ */
+        color: transparent;
+    }
+    .bar:focus::-webkit-input-placeholder {
+        color:  grey;
     }
     .bar:focus {
-        width: 740px;
+        width: 725px;
+        right: 32px;
+        background-color: white;
     }
     .results {
         top: 34px;
