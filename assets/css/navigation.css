@@ -150,7 +150,7 @@
         right:  40px;
         top:  4px;
         display: block;
-        position: absolute;
+        position: fixed;
         z-index: 101;
     }
     input.bar::-webkit-input-placeholder { /* Chrome/Opera/Safari */
